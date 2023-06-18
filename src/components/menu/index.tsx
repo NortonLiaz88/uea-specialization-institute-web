@@ -37,8 +37,9 @@ export default function EnhancedMenu({ children }: Props) {
           {children}
           <ChevronDownIcon
             strokeWidth={2.5}
-            className={`h-3.5 w-3.5 transition-transform ${openMenu ? 'rotate-180' : ''
-              }`}
+            className={`h-3.5 w-3.5 transition-transform ${
+              openMenu ? 'rotate-180' : ''
+            }`}
           />
         </Button>
       </MenuHandler>
@@ -51,8 +52,9 @@ export default function EnhancedMenu({ children }: Props) {
               Nested Item
               <ChevronRightIcon
                 strokeWidth={2.5}
-                className={`h-3.5 w-3.5 transition-transform ${openNested ? 'rotate-180' : ''
-                  }`}
+                className={`h-3.5 w-3.5 transition-transform ${
+                  openNested ? 'rotate-180' : ''
+                }`}
               />
             </MenuItem>
           </MenuHandler>
