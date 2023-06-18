@@ -8,7 +8,25 @@ import {
 import logoUrl from '../../../assets/uea-logo.png'
 import EnhancedMenu from '../menu'
 
-export default function Example() {
+const routes = [
+  {
+    name: 'apresentação'
+  },
+  {
+    name: 'áreas de concetração'
+  },
+  {
+    name: 'doscentes'
+  },
+  {
+    name: 'coordenação'
+  },
+  {
+    name: 'secretaria'
+  }
+]
+
+export default function EnhancedNavbar() {
   const [openNav, setOpenNav] = React.useState(false)
 
   React.useEffect(() => {
@@ -26,7 +44,7 @@ export default function Example() {
         color="gray"
         className="text-base font-normal capitalize tracking-normal text-gray-600"
       >
-        <EnhancedMenu>Programa</EnhancedMenu>
+        <EnhancedMenu items={routes}>Programa</EnhancedMenu>
       </Typography>
       <Typography
         as="li"
