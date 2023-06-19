@@ -5,7 +5,7 @@ import {
   Navbar,
   Typography
 } from '@material-tailwind/react'
-import logoUrl from '../../../assets/uea-logo.png'
+import logoUrl from '../../../assets/images/uea-logo.png'
 import EnhancedMenu from '../menu'
 
 const routes = [

@@ -3,9 +3,9 @@ import InstituteTemplate from './template/institute'
 
 function App(): ReactElement {
   return (
-    <div className="flex-auto flex-column">
-      <InstituteTemplate />
-    </div>
+    <InstituteTemplate title="ultimas notícias">
+      <></>
+    </InstituteTemplate>
   )
 }
 

@@ -11,11 +11,23 @@ module.exports = withTM({
   ],
   theme: {
     colors: {
+      activity: '#23527C',
       transparent: 'transparent',
       current: 'currentColor',
+      background: 'rgba(247, 247, 247, 0.8)',
       blue: colors.blue,
       blueGray: colors.blueGray,
+      shape: '#E5E5E5',
+
       ...colors
+    },
+    extend: {
+      spacing: {
+        128: '46rem'
+      },
+      minHeight: {
+        '1/2': '50%'
+      }
     }
   },
   plugins: [require('@tailwindcss/forms')],
